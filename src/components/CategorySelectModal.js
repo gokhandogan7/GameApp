@@ -32,7 +32,7 @@ const CategorySelectModal = (props) => {
       <TouchableOpacity
         style={categoryModal.categoryItemContainer}
         onPress={() => props.onCategorySelect(item)}>
-        <Icon name="clock" color="white" size={30} />
+        <Icon name="bell" color="white" size={23} />
         <Text style={categoryModal.categoryItemText}>{item.name}</Text>
         </TouchableOpacity>
     );
