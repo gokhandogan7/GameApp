@@ -26,3 +26,17 @@ export const introPage = StyleSheet.create({
     fontFamily: 'IndieFlower-Regular',
   },
 });
+
+export const finishPage = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#3949ab',
+    justifyContent: 'center'
+  },
+  text: {
+    color: 'white',
+    fontSize: 100,
+    textAlign: 'center',
+    fontFamily: 'IndieFlower-Regular'
+  }
+});

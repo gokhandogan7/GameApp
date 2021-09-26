@@ -18,7 +18,7 @@ const QuestionItem = (props) => {
         <TouchableOpacity
           style={questionItem.trueButton}
           onPress={() =>
-            props.onAnswer(props.questionObject.correct_answer === 'true')
+            props.onAnswer(props.questionObject.correct_answer === 'True')
           }>
           <Text style={questionItem.buttonText}>True</Text>
         </TouchableOpacity>
