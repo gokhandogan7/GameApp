@@ -39,6 +39,7 @@ const Intro = (props) => {
       <Timer
         isPlaying={counterFlag}
         onComplete={() => props.navigation.navigate('Questions')}
+        time={5}
       />
       <View style={introPage.container}>
         <TouchableOpacity
