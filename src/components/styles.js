@@ -50,6 +50,7 @@ export const TimerStyle = StyleSheet.create({
   timer: {
     backgroundColor: '#3949ab',
     alignItems: 'center',
+    margin:0
   },
 });
 
@@ -72,21 +73,21 @@ export const questionItem = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
-    padding: 20,
+    padding: 10,
     justifyContent: 'space-evenly',
   },
   trueButton: {
     backgroundColor: '#689f38',
-    padding: 20,
+    padding: 15,
     borderRadius: 10,
   },
   falseButton: {
     backgroundColor: '#d32f2f',
-    padding: 20,
+    padding: 15,
     borderRadius: 10,
   },
   buttonText: {
-    fontSize: 40,
+    fontSize: 30,
     color: 'white',
     fontFamily: 'Pacifico-Regular',
   },

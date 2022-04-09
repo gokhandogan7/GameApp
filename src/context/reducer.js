@@ -5,7 +5,8 @@ export const reducer = (state, action) => {
       state.questions = action.payload.questions;
       return {...state};
     case 'SET_SCORE':
-      state.score = action.payload.isTrue ? state.score + 1 : state.score;
+      const pointStatus = action.payload.isTrue;
+      state.score = pointStatus ? state.score + 1 : state.score;
       return {...state};
     default:
       return state;

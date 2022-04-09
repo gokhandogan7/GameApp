@@ -2,14 +2,16 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {questionItem} from './styles';
+///import base64 from 'react-native-base64';
 
 const QuestionItem = (props) => {
+  
   return (
     <View style={questionItem.container}>
       <View style={{flex: 1, justifyContent: 'center'}}>
         <View style={questionItem.questionContainer}>
           <Text style={questionItem.questionText}>
-            {props.questionObject.question}
+            {(props.questionObject.question)}
           </Text>
         </View>
       </View>

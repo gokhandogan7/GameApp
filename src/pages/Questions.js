@@ -5,6 +5,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {QuestionItem} from '../components';
 import {Timer} from '../components'
 
+
 const Questions = props => {
   const listRef = useRef(null);
   const questionList = useSelector(state => state.questions);
@@ -15,12 +16,13 @@ const Questions = props => {
   );
 
   const answer = result => {
+    console.log(result)
     dispatch({
       type: 'SET_SCORE',
       payload: {isTrue: result},
     });
     const newIndex = currentIndex + 1;
-    if (newIndex === questionList.length)
+    if (newIndex >= questionList.length)
       return props.navigation.navigate('Finish');
     listRef.current.scrollToIndex({index: newIndex});
     setCurrentIndex(newIndex);

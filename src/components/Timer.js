@@ -8,6 +8,9 @@ import {TimerStyle} from './styles';
 const Timer = (props) => (
   <View style={TimerStyle.timer}>
     <CountdownCircleTimer
+    size={120}
+    trailStrokeWidth={0}
+    strokeWidth={8}
       isPlaying={props.isPlaying}
       duration={props.time}
       onComplete={props.onComplete}
@@ -17,7 +20,7 @@ const Timer = (props) => (
         ['#ff8a65', 0.2],
       ]}>
       {({remainingTime, animatedColor}) => (
-        <Animated.Text style={{color: '#ba68c8', fontSize: 60}}>
+        <Animated.Text style={{fontFamily:"Pacifico-Regular", color: '#ba68c8', fontSize: 50, marginBottom:18}}>
           {remainingTime}
         </Animated.Text>
       )}
